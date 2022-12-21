@@ -1,13 +1,4 @@
 # MineSweeperFX
-## Starten der Anwendung
-
-#### MineSweeperFX_Commandline.jar
-Mit folgendem Befehl von einer Kommando-Zeile: <br>
-" java --module-path <Pfand-zu-JavaFX>\lib --add-modules javafx.controls,javafx.fxml -jar 'MineSweeperFX_Commandline.jar' "
-
-#### MineSweeperFX_Runnable.jar
-Per Doppel-Klick auf die Datei
-
 ## Verwendung der Anwendung
 
 #### Start-Bildschirm
