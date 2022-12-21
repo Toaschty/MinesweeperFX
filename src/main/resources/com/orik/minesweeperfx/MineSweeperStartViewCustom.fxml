@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.TextField?>
+
+<VBox alignment="CENTER" spacing="5.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.orik.minesweeperfx.Controllers.MineSweeperStartViewCustomController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+
+    <GridPane id="StartView" maxWidth="Infinity" hgap="5" vgap="5">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="50"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="50"/>
+            <RowConstraints minHeight="50"/>
+            <RowConstraints minHeight="50"/>
+            <RowConstraints minHeight="50"/>
+        </rowConstraints>
+
+        <Label id="Title" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" prefWidth="Infinity" minHeight="50" alignment="CENTER">
+            MineSweeperFX
+        </Label>
+        <Label id="Size" GridPane.columnIndex="0" GridPane.rowIndex="1" prefWidth="Infinity" minHeight="50" alignment="CENTER">Size</Label>
+        <ComboBox id="SizeBox" fx:id="SizeBox" onAction="#SelectionChanged" GridPane.columnIndex="1" GridPane.rowIndex="1" minHeight="50" maxWidth="300">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Small" />
+                    <String fx:value="Middle" />
+                    <String fx:value="Large" />
+                    <String fx:value="Custom" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <GridPane GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2" maxWidth="Infinity" hgap="5" vgap="5">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="25"/>
+                <ColumnConstraints percentWidth="25"/>
+                <ColumnConstraints percentWidth="25"/>
+                <ColumnConstraints percentWidth="25"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="50"/>
+            </rowConstraints>
+            <Label id="xSize" GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="Infinity" minHeight="50" alignment="CENTER">X</Label>
+            <TextField id="xSizeField" fx:id="XSizeField" onKeyReleased="#XFieldChanged" GridPane.rowIndex="0" minHeight="50" GridPane.columnIndex="1" alignment="CENTER"/>
+            <Label id="ySize" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="Infinity" minHeight="50" alignment="CENTER">Y</Label>
+            <TextField id="ySizeField" fx:id="YSizeField" onKeyReleased="#YFieldChanged" GridPane.rowIndex="0" minHeight="50" GridPane.columnIndex="3" alignment="CENTER"/>
+        </GridPane>
+        <Label id="Diff" GridPane.columnIndex="0" GridPane.rowIndex="3" prefWidth="Infinity" minHeight="50" alignment="CENTER">Difficulty</Label>
+        <ComboBox id="DiffBox" fx:id="DiffBox" GridPane.columnIndex="1" GridPane.rowIndex="3" minHeight="50" maxWidth="300">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Easy" />
+                    <String fx:value="Normal" />
+                    <String fx:value="Hard" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <Button id="StartButton" fx:id="StartButton" onAction="#StartGame" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2" prefWidth="Infinity" minHeight="50">
+            Start
+        </Button>
+    </GridPane>
+</VBox>

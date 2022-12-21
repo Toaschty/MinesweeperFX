@@ -1,0 +1,20 @@
+.label {
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+    -fx-padding: 5px;
+}
+
+.button {
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+}
+
+.button:hover {
+    -fx-background-color: #E0E0C0;
+}

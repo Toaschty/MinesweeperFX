@@ -1,0 +1,27 @@
+#TopBar {
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+    -fx-padding: 10px;
+}
+
+#CurrentSettings, #Time, #Bombs {
+    -fx-background-color: transparent;
+}
+
+.label {
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+}
+
+.label:hover {
+    -fx-background-color: #E0E0C0;
+}
+
+.label:disabled {
+    -fx-opacity: 1;
+    -fx-background-color: #f6efe2;
+}

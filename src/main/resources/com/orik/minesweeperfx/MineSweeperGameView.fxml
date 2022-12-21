@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<VBox alignment="CENTER" spacing="5.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.orik.minesweeperfx.Controllers.MineSweeperGameViewController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+
+    <GridPane id="TopBar" fx:id="TopBar" GridPane.columnIndex="0" GridPane.rowIndex="0" maxWidth="Infinity">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="33"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50"/>
+        </rowConstraints>
+
+        <Label id="CurrentSettings" fx:id="CurrentSettings" GridPane.columnIndex="0" GridPane.rowIndex="0"
+               GridPane.hgrow="ALWAYS" GridPane.halignment="LEFT">? - ?
+        </Label>
+        <Label id="Time" fx:id="Time" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"
+               GridPane.halignment="CENTER">00:00
+        </Label>
+        <Label id="Bombs" fx:id="Bombs" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS"
+               GridPane.halignment="RIGHT">? | ?
+        </Label>
+    </GridPane>
+
+    <GridPane id="Board" fx:id="Board" GridPane.columnIndex="0" GridPane.rowIndex="1" hgap="5" vgap="5"/>
+
+</VBox>

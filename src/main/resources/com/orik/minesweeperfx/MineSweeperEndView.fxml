@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="5.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.orik.minesweeperfx.Controllers.MineSweeperEndViewController">
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+
+
+    <GridPane id="EndView" fx:id="EndView" maxWidth="Infinity" hgap="5" vgap="5">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50"/>
+            <RowConstraints maxHeight="50"/>
+            <RowConstraints maxHeight="50"/>
+        </rowConstraints>
+
+        <Label id="Message" fx:id="Message" GridPane.rowIndex="0" minHeight="50" alignment="CENTER" prefWidth="300">Gewonnen!</Label>
+        <Label id="Time" fx:id="Time" GridPane.rowIndex="1" minHeight="50" alignment="CENTER" prefWidth="300">00:00</Label>
+        <Button id="Continue" fx:id="Continue" onAction="#showStartView" GridPane.rowIndex="2" minHeight="50" alignment="CENTER" prefWidth="300">Continue</Button>
+    </GridPane>
+</VBox>

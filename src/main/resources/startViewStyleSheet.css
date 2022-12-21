@@ -1,0 +1,50 @@
+.label {
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+    -fx-padding: 5px;
+}
+
+.button {
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+}
+
+.button:hover {
+    -fx-background-color: #E0E0C0;
+}
+
+.combo-box-base {
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #F0E5CF;
+    -fx-padding: 5px;
+}
+
+.combo-box-base:hover {
+    -fx-background-color: #E0E0C0;
+}
+
+
+.combo-box .list-cell {
+    -fx-background-color: #F0E5CF;
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #E0E0C0;
+}
+
+.text-field {
+    -fx-font: 20px 'Aharoni';
+    -fx-font-weight: bold;
+    -fx-background-color: #E0E0C0;
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
