@@ -1,4 +1,8 @@
 # MineSweeperFX
+Eine kleine Implementation von dem Klassiker "Minesweeper" in JavaFX
+* Unterschiedliche Feldgrößen: Klein, Mittel, Groß, Benutzerdefiniert
+* Unterschiedliche Schwierigkeitsgrade: Einfach, Normal, Schwer
+
 ## Verwendung der Anwendung
 
 #### Start-Bildschirm
